@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+    .top {
+        height: 735px;
+    }
+
+    .center {
+        height: 1221px;
+    }
+
+    .footer {
+        height: 653.61px;
+        padding-top: 100px;
+    }
+}
