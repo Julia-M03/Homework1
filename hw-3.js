@@ -33,7 +33,7 @@ if ( question === password ) {
  alert(Number(a) + Number(b));
 
 //5.
-var monthNumber = Number(prompt("Введите номер месяца"));
+let monthNumber = Number(prompt("Введите номер месяца"));
 
 switch (monthNumber) {
    case '12':
