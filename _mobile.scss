@@ -5,29 +5,26 @@
         margin-left: -104px;
         display: flex;
         align-items: center;
+        margin-left: 16px;
     }
 
     .title {
         font-size: 32px;
-        font-weight: 700;
-        line-height: 39px;
         text-align: center;
         max-width: 343px;
     }
 
     .text {
         font-size: 14px;
-        font-weight: 700;
-        line-height: 22px;
         text-align: center;
         max-width: 343px;
     }
 
-    .center {
+    .section__game {
         margin-left: -104px;
     }
 
-    .footer {
+    .section__season {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -35,22 +32,40 @@
         height: 653.61px;
     }
 
-    .footer__item {
+    .season__item {
         display: flex;
         align-items: center;
         margin-top: -48.44px;
 
     }
 
-    .footer__text {
+    .season__text {
         font-size: 14px;
-        font-weight: 300;
-        line-height: 22px;
         text-align: center;
         max-width: 370px;
     }
 
-    .footer__game {
+    .season__game {
         margin-left: 120px;
+    }
+
+    .memory__title {
+        font-size: 32px;
+    }
+
+    .memory__text {
+        font-size: 14px;
+    }
+
+    .puzzles__item {
+        margin-left: -104px;
+    }
+
+    .puzzles__title {
+        font-size: 32px;
+    }
+
+    .puzzles__text {
+        font-size: 14px;
     }
 }
