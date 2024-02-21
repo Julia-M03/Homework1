@@ -25,9 +25,6 @@
     }
 
     .section__season {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         margin-left: -104px;
         height: 653.61px;
     }
@@ -37,6 +34,11 @@
         align-items: center;
         margin-top: -48.44px;
 
+    }
+
+    .season__title {
+        font-size: 32px;
+        font-weight: 700;
     }
 
     .season__text {
@@ -49,12 +51,27 @@
         margin-left: 120px;
     }
 
+    .section__memory {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 300px;
+        margin-left: -104px;
+    }
+
+    .memory__item {
+        display: flex;
+        align-items: center;
+    }
+
     .memory__title {
         font-size: 32px;
     }
 
     .memory__text {
         font-size: 14px;
+        text-align: center;
+        max-width: 343px;
     }
 
     .puzzles__item {

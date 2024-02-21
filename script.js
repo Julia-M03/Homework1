@@ -1,15 +1,15 @@
-function monthNumber(season) {
-    let result = Number(prompt("Введите номер месяца"));
+function monthNumber() {
+    let season = prompt("Введите номер месяца");
 
     if (season == 1 || season == 2 || season == 12) {
-        return 'Зима';
+        alert('Зима');
     } else if (season >= 3 && season <= 5) {
-        return 'Весна';
+        alert('Весна');
     } else if (season >= 6 && season <= 8) {
-        return 'Лето';
+        alert('Лето');
     } else if (season >= 9 && season <= 11) {
-        return 'Осень';
+        alert('Осень');
     } else {
-        return 'Ошибка';
+        alert('Ошибка');
     }
  }

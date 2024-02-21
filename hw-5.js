@@ -27,9 +27,10 @@
 
 //4.
  function userAge() {
-    let age = Number(prompt('Сколько Вам лет?'));
+    let age = prompt('Сколько Вам лет?');
+    age = Number(age);
 
-    if (age <= 0) {
+    if (isNaN(age) || age <= 0) {
         console.log(`Вы ввели неправильное значение`);
     } else if (age <= 12) {
         console.log(`Привет, друг!`);
@@ -87,18 +88,18 @@
   console.log(circle2.getPerimeter());
 
 //8.
- function monthNumber(season) {
-    let result = Number(prompt("Введите номер месяца"));
+ function monthNumber() {
+    let season = prompt("Введите номер месяца");
 
     if (season == 1 || season == 2 || season == 12) {
-        return 'Зима';
+        alert('Зима');
     } else if (season >= 3 && season <= 5) {
-        return 'Весна';
+        alert('Весна');
     } else if (season >= 6 && season <= 8) {
-        return 'Лето';
+        alert('Лето');
     } else if (season >= 9 && season <= 11) {
-        return 'Осень';
+        alert('Осень');
     } else {
-        return 'Ошибка';
+        alert('Ошибка');
     }
  }
