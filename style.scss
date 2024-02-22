@@ -23,8 +23,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .header {
@@ -41,7 +39,7 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 788.78px;
+  max-width: 788.78px;
 }
 
 .text {
@@ -49,7 +47,7 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
-  width: 481px;
+  max-width: 481px;
   margin-top: 18px;
 }
 
@@ -176,8 +174,11 @@ a {
 }
 
 .season__game {
+  position: absolute;
   max-width: 485px;
-  max-height: 333px;
+  width: 100%;
+  aspect-ratio: 485/333;
+  // height: 333px; 
 }
 
 .section__memory {
@@ -193,9 +194,11 @@ a {
   padding-left: 120px;
 }
 
-.memory__img {
+.memory__game {
   max-width: 481px;
-  max-width: 322px;
+  width: 100%;
+  aspect-ratio: 481/322;
+  // height: 322px;
 }
 
 .memory__item {
