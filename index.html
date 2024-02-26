@@ -12,58 +12,56 @@
 </head>
 
 <body>
-    <section class="top">
-        <div class="header">
-            <h1 class="title">Добро пожаловать на мой сайт !</h1>
+    <header class="header center">
+        <div class="top">
+            <h1 class="title">Добро пожаловать на мой сайт!</h1>
             <p class="text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай поехали и приступай</p>
             <button class="button" type="submit">Поехали!</button>
         </div>
-    </section>
+    </header>
 
-    <section class="section__game">
+    <main class="center">
         <div class="game__list">
             <a class="game__img game__img-1" href="#">Игра 1</a>
             <a class="game__img game__img-2" href="#">Игра 2</a>
             <a class="game__img game__img-3" href="#">Игра 3</a>
         </div>
-    </section>
 
-    <section class="section__season">
-        <div class="season__item">
-            <h2 class="season__title">Времена года!</h2>
-            <p class="season__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
-                времени года он относится</p>
-            <button onclick="monthNumber()" class="season__button button" type="submit">Поехали!</button>
-        </div>
-        <div season__img>
+        <section class="section__season">
+            <div class="season__item">
+                <h2 class="season__title">Времена года!</h2>
+                <p class="season__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
+                    времени года он относится</p>
+                <button onclick="monthNumber()" class="season__button button" type="submit">Поехали!</button>
+            </div>
             <img class="season__game" src="img/season_game.svg" alt="game">
-        </div>
-    </section>
+        </section>
 
-    <section class="section__memory">
-        <div memory__img>
+        <section class="section__memory">
             <img class="memory__game" src="img/memory_game.svg" alt="game">
-        </div>
-        <div class="memory__item">
-            <h2 class="memory__title">Запомни слова</h2>
-            <p class="memory__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
-                запомнить.</p>
-            <button class="memory__button button" type="submit">Играть</button>
-        </div>
-    </section>
+            <div class="memory__item">
+                <h2 class="memory__title">Запомни слова</h2>
+                <p class="memory__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                    запомнить.</p>
+                <button class="memory__button button" type="submit">Играть</button>
+            </div>
+        </section>
 
-    <section class="section__puzzles">
-        <div class="puzzles__item">
-            <h2 class="puzzles__title">Игра в загадки</h2>
-            <p class="puzzles__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер
-            даст вам подсказку. У вас будет три попытки и две подсказки.</p>
-        <button class="puzzles__button button" type="submit">Играть!</button>
-        </div>
-    </section>
+        <section class="section__puzzles">
+            <div class="puzzles__item">
+                <h2 class="puzzles__title">Игра в загадки</h2>
+                <p class="puzzles__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не
+                    правильный ответ, то компьютер
+                    даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+                <button class="puzzles__button button" type="submit">Играть!</button>
+            </div>
+        </section>
+    </main>
 
-    <footer class="footer">
+    <footer class="footer center">
         <h3 class="footer__title">Все права защищены</h3>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
