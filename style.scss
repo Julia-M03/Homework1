@@ -11,13 +11,22 @@ select {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #000915;
+}
+
+img {
+  width: 100%;
 }
 
 a {
   text-decoration: none;
 }
 
-.top {
+.center {
+  padding-inline: max(50% - 599px, 16px);
+}
+
+.header {
   height: 1024px;
   background-image: url(img/top.jpg);
   background-repeat: no-repeat;
@@ -25,21 +34,20 @@ a {
   background-size: cover;
 }
 
-.header {
+.top {
   padding-top: 205px;
-  padding-left: 120px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
 .title {
+  max-width: 666px;
   color: #FFF;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  max-width: 788.78px;
 }
 
 .text {
@@ -49,6 +57,7 @@ a {
   line-height: 32px;
   max-width: 481px;
   margin-top: 18px;
+  margin-bottom: 44px;
 }
 
 .button {
@@ -61,18 +70,10 @@ a {
   background: #9C0332;
   width: 234.063px;
   height: 48.603px;
-  margin-top: 44px;
 }
 
 .button:hover {
   cursor: url(img/vector.png), auto;
-}
-
-.section__game {
-  background-image: url(img/section_game.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .game__list {
@@ -81,8 +82,7 @@ a {
   flex-direction: row;
   justify-content: center;
   gap: 32px;
-  padding-top: 128px;
-  padding-left: 120px;
+  padding-block: 128px;
 }
 
 .game__img-1 {
@@ -98,11 +98,12 @@ a {
 }
 
 .game__img {
+  box-sizing: border-box;
   border-radius: 16px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 377px;
+  max-width: 378px;
   width: 100%;
   aspect-ratio: 378/300;
   // height: 300px; 
@@ -125,21 +126,14 @@ a {
 
 .section__season {
   height: 800px;
-  background-image: url(img/season.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 135px;
+  gap: 64px 135px;
   padding-top: 233.56px;
 }
 
 .season__item {
   padding-top: 48.44px;
-  padding-left: 120px;
-  width: 584px;
+  max-width: 584px;
   display: flex;
   flex-direction: column;
   row-gap: 32px;
@@ -174,31 +168,21 @@ a {
 }
 
 .season__game {
-  position: absolute;
   max-width: 485px;
   width: 100%;
-  aspect-ratio: 485/333;
-  // height: 333px; 
+  max-height: 333px;
 }
 
 .section__memory {
-  background-image: url(img/memory.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 800px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 135px;
-  padding-left: 120px;
+  gap: 64px 135px;
 }
 
 .memory__game {
   max-width: 481px;
   width: 100%;
-  aspect-ratio: 481/322;
-  // height: 322px;
+  max-height: 322px;
 }
 
 .memory__item {
@@ -240,14 +224,11 @@ a {
   background-size: cover;
   height: 800px;
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 120px;
 }
 
 .puzzles__item {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 32px;
