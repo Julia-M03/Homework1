@@ -80,15 +80,7 @@ function getLengthWords(array) {
 console.log(array);
 
 //13.
-function filterPositive(array) {
-    return array.filter(value => {
-        if (value < 0) {
-            return true;
-        } else {
-            return false;
-        }
-    });
-}
+const filterPositive = array => array.filter(value => value < 0);
 
 console.log(filterPositive([-1, 0, 5, -10, 56]));
 console.log(filterPositive([-25, 25, 0, -1000, -2])); 
