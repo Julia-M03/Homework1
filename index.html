@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework</title>
+    <title>Игры</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -20,24 +20,51 @@
         </div>
     </section>
 
-    <section class="center">
-        <div class="center__list">
-            <a class="center__img center__img-1" href="#">Игра 1</a>
-            <a class="center__img center__img-2" href="#">Игра 2</a>
-            <a class="center__img center__img-3" href="#">Игра 3</a>
+    <section class="section__game">
+        <div class="game__list">
+            <a class="game__img game__img-1" href="#">Игра 1</a>
+            <a class="game__img game__img-2" href="#">Игра 2</a>
+            <a class="game__img game__img-3" href="#">Игра 3</a>
+        </div>
+    </section>
+
+    <section class="section__season">
+        <div class="season__item">
+            <h2 class="season__title">Времена года!</h2>
+            <p class="season__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
+                времени года он относится</p>
+            <button onclick="monthNumber()" class="season__button button" type="submit">Поехали!</button>
+        </div>
+        <div season__img>
+            <img class="season__game" src="img/season_game.svg" alt="game">
+        </div>
+    </section>
+
+    <section class="section__memory">
+        <div memory__img>
+            <img class="memory__game" src="img/memory_game.svg" alt="game">
+        </div>
+        <div class="memory__item">
+            <h2 class="memory__title">Запомни слова</h2>
+            <p class="memory__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <button class="memory__button button" type="submit">Играть</button>
+        </div>
+    </section>
+
+    <section class="section__puzzles">
+        <div class="puzzles__item">
+            <h2 class="puzzles__title">Игра в загадки</h2>
+            <p class="puzzles__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер
+            даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+        <button class="puzzles__button button" type="submit">Играть!</button>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="footer__item">
-            <h2 class="footer__title">Времена года!</h2>
-            <p class="footer__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <button class="footer__button" type="submit">Играть!</button>
-        </div>
-        <div footer__img>
-            <img class="footer__game" src="img/footer_game.png" alt="game">
-        </div>
+        <h3 class="footer__title">Все права защищены</h3>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

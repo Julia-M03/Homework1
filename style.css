@@ -23,8 +23,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .header {
@@ -41,7 +39,7 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 788.78px;
+  max-width: 788.78px;
 }
 
 .text {
@@ -49,7 +47,7 @@ a {
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
-  width: 481px;
+  max-width: 481px;
   margin-top: 18px;
 }
 
@@ -70,14 +68,14 @@ a {
   cursor: url(img/vector.png), auto;
 }
 
-.center {
-  background-image: url(img/center.jpg);
+.section__game {
+  background-image: url(img/section_game.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.center__list {
+.game__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -87,19 +85,19 @@ a {
   padding-left: 120px;
 }
 
-.center__img-1 {
+.game__img-1 {
   background-image: url(img/game_1.jpg);
 }
 
-.center__img-2 {
+.game__img-2 {
   background-image: url(img/game_2.jpg);
 }
 
-.center__img-3 {
+.game__img-3 {
   background-image: url(img/game_3.jpg);
 }
 
-.center__img {
+.game__img {
   border-radius: 16px;
   background-repeat: no-repeat;
   background-position: center;
@@ -120,13 +118,13 @@ a {
   padding-left: 32px;
 }
 
-.center__img:hover {
+.game__img:hover {
   cursor: url(img/vector.png), auto;
 }
 
-.footer {
+.section__season {
   height: 800px;
-  background-image: url(img/footer.jpg);
+  background-image: url(img/season.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -137,7 +135,7 @@ a {
   padding-top: 233.56px;
 }
 
-.footer__item {
+.season__item {
   padding-top: 48.44px;
   padding-left: 120px;
   width: 584px;
@@ -146,7 +144,7 @@ a {
   row-gap: 32px;
 }
 
-.footer__title {
+.season__title {
   color: rgb(255, 255, 255);
   font-size: 48px;
   font-weight: 700;
@@ -155,7 +153,7 @@ a {
   text-align: left;
 }
 
-.footer__text {
+.season__text {
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 300;
@@ -163,7 +161,7 @@ a {
   letter-spacing: 0px;
 }
 
-.footer__button {
+.season__button {
   border-radius: 30px;
   background: rgb(156, 3, 50);
   width: 234.06px;
@@ -174,54 +172,191 @@ a {
   line-height: 22px;
 }
 
-.footer__button:hover {
-  cursor: url(img/vector.png), auto;
+.season__game {
+  position: absolute;
+  max-width: 485px;
+  width: 100%;
+  aspect-ratio: 485/333;
+}
+
+.section__memory {
+  background-image: url(img/memory.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 135px;
+  padding-left: 120px;
+}
+
+.memory__game {
+  max-width: 481px;
+  width: 100%;
+  aspect-ratio: 481/322;
+}
+
+.memory__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.memory__title {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+}
+
+.memory__text {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  max-width: 588px;
+}
+
+.memory__button {
+  width: 240.44px;
+  height: 48.6px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section__puzzles {
+  background-image: url(img/puzzles.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 120px;
+}
+
+.puzzles__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.puzzles__title {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.puzzles__text {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.puzzles__button {
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  width: 234.06px;
+  height: 48.6px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer {
+  background-image: url(img/footer.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
 }
 
 @media (max-width: 767px) {
   .header {
-    margin-top: 238.69px;
     margin-left: -104px;
     display: flex;
     align-items: center;
   }
   .title {
     font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
     text-align: center;
-    max-width: 343px;
   }
   .text {
     font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
     text-align: center;
-    max-width: 343px;
   }
-  .center {
+  .section__game {
     margin-left: -104px;
   }
-  .footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  .section__season {
     margin-left: -104px;
     height: 653.61px;
   }
-  .footer__item {
+  .season__item {
     display: flex;
     align-items: center;
     margin-top: -48.44px;
   }
-  .footer__text {
+  .season__title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .season__text {
     font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
     text-align: center;
     max-width: 370px;
   }
-  .footer__game {
+  .season__game {
     margin-left: 120px;
+  }
+  .section__memory {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-top: 300px;
+    margin-left: -104px;
+  }
+  .memory__item {
+    display: flex;
+    align-items: center;
+  }
+  .memory__title {
+    font-size: 32px;
+  }
+  .memory__text {
+    font-size: 14px;
+    text-align: center;
+    max-width: 343px;
+  }
+  .puzzles__item {
+    margin-left: -104px;
+  }
+  .puzzles__title {
+    font-size: 32px;
+  }
+  .puzzles__text {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
