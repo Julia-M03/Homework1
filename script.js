@@ -13,3 +13,19 @@ function monthNumber() {
         alert('Ошибка');
     }
  }
+
+ function listGame() {
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    list = list.sort(() => Math.random() - 0.5);
+    alert(list);
+    let question1 = prompt("Чему равнялся первый элемент массива?");
+    let question2 = prompt("Чему равнялся последний элемент массива?");
+
+    if (question1 === list[0] && question2 === list[list.length - 1]) {
+        alert('Вы угадали оба элемента! Поздравляем!');
+    } else if ((question1 === list[0] || question2 === list[list.length - 1])) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Вы ответили неверно');
+    }
+}
