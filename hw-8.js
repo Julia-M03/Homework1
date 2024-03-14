@@ -11,20 +11,20 @@ console.log(people.sort((a, b) => a.age - b.age));
 
 //2.
 function isPositive(num) {
-        return num > 0;
+    return num > 0;
 }
 
-function isMale(name, gender) {
+function isMale(gender) {
     if (gender === 'male') {
-        return name + gender; 
-       } 
+        return gender;
+    }
 }
 
 function filter(arr, ruleFunction) {
     const output = [];
     for (let i = 0; i < arr.length; i++) {
         if (ruleFunction(arr[i])) {
-            result.push(arr[i]);
+            output.push(arr[i]);
         }
     }
     return output;
@@ -32,28 +32,30 @@ function filter(arr, ruleFunction) {
 
 console.log(filter([3, -4, 1, 9], isPositive));
 
-const people = [
+const peoples = [
     { name: 'Глеб', gender: 'male' },
     { name: 'Анна', gender: 'female' },
     { name: 'Олег', gender: 'male' },
     { name: 'Оксана', gender: 'female' }
 ];
 
-console.log(filter(people, isMale));
+console.log(filter(peoples, isMale));
 
 
 //3.
 const timer = () => {
     let newDate = new Date();
-	const interval = setInterval(() => {
-		console.log(newDate);
-	}, 1000 * 3);
+    console.log(newDate);
+    const interval = setInterval(() => {
+        newDate.setSeconds(newDate.getSeconds() + 3);
+        console.log(newDate);
+    }, 3000);
 
-	setTimeout(() => {
+    setTimeout(() => {
         clearInterval(interval);
         console.log('Прошло 30 секунд')
-      }, 1000 * 30)
-};
+    }, 30000)
+}
 timer(30);
 
 //4.
@@ -68,7 +70,7 @@ delayForSecond(function () {
 
 
 //5.
-function delayForSecond(cb) {
+function delaySecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
         if (cb) { cb(); }
@@ -79,5 +81,5 @@ function sayHi(name) {
     console.log('Привет, ${name}!');
 }
 
-delayForSecond(() => sayHi('Глеб'));
+delaySecond(() => sayHi('Глеб'));
 
