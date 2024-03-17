@@ -14,10 +14,8 @@ function isPositive(num) {
     return num > 0;
 }
 
-function isMale(gender) {
-    if (gender === 'male') {
-        return gender;
-    }
+function isMale(person) {
+    return person.gender === 'male';
 }
 
 function filter(arr, ruleFunction) {
@@ -44,10 +42,8 @@ console.log(filter(peoples, isMale));
 
 //3.
 const timer = () => {
-    let newDate = new Date();
-    console.log(newDate);
     const interval = setInterval(() => {
-        newDate.setSeconds(newDate.getSeconds() + 3);
+        let newDate = new Date();
         console.log(newDate);
     }, 3000);
 
